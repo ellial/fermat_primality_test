@@ -49,6 +49,27 @@ def fermat_test(b,c=None,d=None):
        return 'not prime'
      
    return 'prime'
+
+def formchange(n):
+  counter = 1
+  n = n - 1
+  while((n % fastpower(2,counter)) == 0 ):
+    k = n // fastpower(2,counter)
+    counter+=1
+
+  return (counter, k)
+  
+
+
+
+
+
+
+
+
+
+
+  
     
 
 
